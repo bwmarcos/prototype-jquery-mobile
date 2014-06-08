@@ -1,4 +1,4 @@
-prototype-jquery-mobile
+Prototype jquery-mobile
 =======================
 
 Sistema multi plataforma para controle de chamados.
