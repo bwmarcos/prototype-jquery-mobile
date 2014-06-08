@@ -1,7 +1,7 @@
 prototype-jquery-mobile
 =======================
 
-Sistema multi plataforma para controle de chamados e coducumentações
+Sistema multi plataforma para controle de chamados.
 
 
 
@@ -11,3 +11,4 @@ Sistema multi plataforma para controle de chamados e coducumentações
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
 
 ```
+
