@@ -1,0 +1,425 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<head>
+<title>Page</title>
+<link rel="stylesheet" href="js/jquery.mobile-1.4.2.min.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=divice-width, initial-scale=1">
+</head>
+<body>
+
+
+
+<!-- Página de Inicio-->
+<div data-role="page" data-theme="b" data-title="prototype 2" id="home">
+  <div data-role="header" data-theme="b" data-position="inline"> <a href="#popupBasic" data-rel="popup" class="ui-btn ui-shadow ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-b ui-btn-inline" data-transition="pop">PopUp</a>
+  <div data-role="popup" id="popupBasic">
+<p>Desenvolvido por: <b>Marcos Junior</b></p>
+</div>
+    <h1>Prototype Mobile</h1>
+</div>
+<table width="100%">
+<tr>
+<td align="center">
+<img id="logo"  src="img/logo-new.png" />
+</td>
+</tr>
+</table>
+
+
+   <div data role="content">
+    <br>
+    
+        <div data-role="navbar" data-theme="b">
+      <ul>
+        <li><a href="#ui"  data-icon="plus">Novo</a></li>
+        <li><a href="#agenda"  data-icon="refresh">Atualizar</a></li>
+        <li><a href="#home"  data-icon="edit">Editar</a></li>
+                
+      </ul>
+    </div> 
+    <hr>
+    
+    <div role="main" class="ui-content">
+        <ul id="list" class="touch" data-role="listview"  >
+            <li>
+                <a href="#demo-mail">
+                    <h3>125245245</h3>
+                    <p class="topic"><strong>Clinca Examplo</strong></p>
+                    <p>There are 3 updates for the home on your watchlist: 1 updated MLS listing and 2 homes under contract.</p>
+                    <p class="ui-li-aside"><strong>24/02/2014</strong><br><br>Ativo</p>
+                    
+                    
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+            <li>
+                <a href="#demo-mail">
+                    <h3>Amazon.com</h3>
+                    <p class="topic"><strong>4-for-3 Books for Kids</strong></p>
+                    <p>As someone who has purchased children's books from our 4-for-3 Store, you may be interested in these featured books.</p>
+                    <p class="ui-li-aside"><strong>24/02/2014</strong><br><br>Atendimento</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+            <li>
+                <a href="#demo-mail">
+                    <h3>Mike Taylor</h3>
+                    <p class="topic"><strong>Re: This weekend in Maine</strong></p>
+                    <p>Hey little buddy, sorry but I can't make it up to vacationland this weekend. Maybe next weekend?</p>
+                    <p class="ui-li-aside"><strong>24/02/2014</strong><br><br>Aguardando</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+            <li>
+                <a href="#demo-mail">
+                    <h3>Redfin</h3>
+                    <p class="topic"><strong>Redfin listing updates for today</strong></p>
+                    <p>There are 3 updates for the home on your watchlist: 1 updated MLS listing and 2 homes under contract.</p>
+                    <p class="ui-li-aside"><strong>24/02/2014</strong><br><br>Fechado</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+            
+            <li>
+                <a href="#demo-mail">
+                    <h3>Redfin</h3>
+                    <p class="topic"><strong>Redfin listing updates for today</strong></p>
+                    <p>There are 3 updates for the home on your watchlist: 1 updated MLS listing and 2 homes under contract.</p>
+                    <p class="ui-li-aside"><strong>24/02/2014</strong><br><br>Finalizado</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li> 
+            
+            <li>
+                <a href="#demo-mail">
+                    <h3>Redfin</h3>
+                    <p class="topic"><strong>Redfin listing updates for today</strong></p>
+                    <p>There are 3 updates for the home on your watchlist: 1 updated MLS listing and 2 homes under contract.</p>
+                    <p class="ui-li-aside"><strong>24/02/2014</strong><br><br>Ativo</p>
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>            
+        </ul>
+    </div><!-- /content -->
+    <div id="confirm" class="ui-content" data-role="popup" data-theme="a">
+        <p id="question">Are you sure you want to delete:</p>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Yes</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar" data-theme="b">
+      <ul>
+        <li><a href="#ui"  data-icon="plus">UI</a></li>
+        <li><a href="#agenda"  data-icon="calendar">AGENDA</a></li>
+        <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">INÍCIO</a></li>
+        <li><a href="#perfil" data-icon="star">PERFIL</a></li>
+        <li><a href="#faq"  data-icon="info">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Fim da Página de Início --> 
+
+<!-- Início da Página de UI -->
+<div data-role="page" data-theme="b" data-title="prototype 2"id="ui">
+  <div data-role="header" data-theme="b" data-position="inline"> <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline">Delete</a>
+    <h1>Prototype Mobile</h1>
+  </div>
+  <div data role="content">
+    <h1>UI</h1>
+    <br>
+    <ul data-role="listview" data-theme="g">
+      <li><a href="http://www.medilabsistemas.com.br/scripts/empresas2.aspx?empresa=">Identificar Ip Externo</a></li>
+      <li><a href="http://medilab.tecnologia.ws/web/tutorial/tutorial_utilizando_autologon_for_windows.htm">Auto Logon Servidor</a></li>
+      <li><a href="http://medilab.tecnologia.ws/web/tutorial/tutorial_instalacao_firebird.htm">Instalando Firebird e Inferiores</a></li>
+      <li><a href="http://medilab.tecnologia.ws/web/tutorial/tutorial_utilizando_robocopy.htm">Utilizando RoboCop Via Terminal</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar" data-theme="b">
+      <ul>
+        <li><a href="#ui" class="ui-btn-active ui-state-persist"  data-icon="plus">UI</a></li>
+        <li><a href="#agenda"  data-icon="calendar">AGENDA</a></li>
+        <li><a href="#home"  data-icon="home">INÍCIO</a></li>
+        <li><a href="#perfil" data-icon="star">PERFIL</a></li>
+        <li><a href="#faq"  data-icon="info">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Fim da Página de UI --> 
+
+<!-- Iníco da Agenda -->
+
+<div data-role="page" data-theme="b" data-title="prototype 2" id="agenda">
+<div data-role="header" data-theme="b" data-position="inline"> <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline">Delete</a>
+  <h1>Prototype Mobile</h1>
+  </div>
+<div data role="content">
+  <h1>Agenda</h1>
+  <br>
+  </div>
+  <!-- pesquisa nomes-->
+  <input placeholder="Filter items..." data-type="search" >
+  <ul data-role="listview" data-theme="b">
+    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b ui-corner-top">A</li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Adam</a></li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Adam2</a></li>
+  </ul>
+  
+  <ul data-role="listview" data-theme="b">
+    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b ui-corner-top">B</li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Bob</a></li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Bob2</a></li>
+  </ul>
+  
+   <ul data-role="listview" data-theme="b">
+    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b ui-corner-top">C</li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Carl</a></li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Carl2</a></li>
+  </ul>
+  
+ <ul data-role="listview" data-theme="b">
+    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b ui-corner-top">D</li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Carl</a></li>
+    <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" ><a href="index.html" >Carl2</a></li>
+  </ul>
+  
+<div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar" data-theme="b">
+      <ul>
+        <li><a href="#ui"  data-icon="plus">UI</a></li>
+        <li><a href="#agenda" class="ui-btn-active ui-state-persist"  data-icon="calendar">AGENDA</a></li>
+        <li><a href="#home" data-icon="home">INÍCIO</a></li>
+        <li><a href="#perfil" data-icon="star">PERFIL</a></li>
+        <li><a href="#faq"  data-icon="info">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Fim da Agenda --> 
+
+<!-- Inico do Perfil -->
+
+
+<div data-role="page" data-theme="b" data-title="prototype 2" id="perfil">
+  <div data-role="header" data-theme="b" data-position="inline"> <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline">Delete</a>
+    <h1>Prototype Mobile</h1>
+  </div>
+  <div data role="content">
+   
+  </div>
+  <div id="theDiv"><img id="logo"  src="img/avatar.jpg" width="50%" align="left" /><b><h3>Marcos Junior</h3></b><p>Email : bw.marcos@gmail.com</p><p>Skype: bwmarcos</p>Telefone: 99412-1818 </div><br><br>
+   <hr>
+   
+   <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Informação de Contato</h3>
+    </p>...
+    	
+	</div>
+    <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Informação Informações do Grupo</h3>
+    </p>...
+    	
+	</div>
+    <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Informação da Empresa</h3>
+    </p>...
+    	
+	</div>
+  
+  <div data-role="footer" data-theme="b" data-position="fixed">
+ 
+    <div data-role="navbar" data-theme="b">
+      <ul>
+        <li><a href="#ui"  data-icon="plus">UI</a></li>
+        <li><a href="#agenda"  data-icon="calendar">AGENDA</a></li>
+        <li><a href="#home" data-icon="home">INÍCIO</a></li>
+        <li><a href="#perfil" class="ui-btn-active ui-state-persist" data-icon="star">PERFIL</a></li>
+        <li><a href="#faq"  data-icon="info">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--Fim do Perfil --> 
+
+
+
+<!--Iníco da FAQ -->
+<div data-role="page" data-theme="b" data-title="prototype 2" id="faq">
+  <div data-role="header" data-theme="b" data-position="inline"> <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-b ui-btn-inline">Delete</a>
+    <h1>Prototype Mobile</h1>
+</div>
+<div data role="content">
+  <h1>FAQ </h1>
+  <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Caso o banco de dados firebird estiver corrompido.</h3>
+    </p>
+    <b>COMPACTAR:</b>
+    </p>
+    gbak -B -V -Z -user SYSDBA -password masterkey
+    <source.gdb>
+    <destination.gbk>
+    <br>
+    </p>
+    <b>RESTORE:</b>
+    </p>
+    gbak -R -V -Z -user SYSDBA -password masterkey
+    <source.gbk>
+    <destination(2).gdb> <br>
+    </p>
+    <b>GFIX:</b>
+    </p>
+    gfix -mend -full -ignore -user SYSDBA -password masterkey
+    <database.gdb>
+    <br>
+    </p>
+    <b>STRING MALFORMED:</b>
+    </p>
+    gbak -R -V -Z -FIX_FSS_M win1252 -user SYSDBA -password masterkey
+    <source.gbk>
+    </p>
+    <destination(2).gdb> <br>
+    <b>VERSÃO DO BANCO:</b>
+    </p>
+    Gstat -h diretório_do_banco <br>
+    </p>
+    <b>Firebird 1.0 - ODS 10</b>
+    </p>
+    <b>Firebird 1.5 - ODS 10.1</b>
+    </p>
+    <b>Firebird 2.0 - ODS 11.0</b>
+    </p>
+    <b>Firebird 2.1 - ODS 11.1</b>
+    </p>
+    <b>Firebird 2.5 - ODS 11.2</b>
+
+</div>
+
+
+<div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Conversão de Banco de Dados Firebird 1.5 para Firebird 2.5</h3>
+    </p>
+    Ainda na versão 1.5 efetuar o seguinte comando de Backup: <br>
+    </p>
+    gbak -B -V -Z -user SYSDBA -password masterkey
+    <source.gdb>
+    <destination.gbk>
+    <br>
+    </p>
+    Desinstalar o firebird 1.5 e instalar a versão 2.5 <br>
+    </p>
+    Executar o comando de restauração e conversão rodando em firebird 2.5:
+    </p>
+    gbak -R -V -Z -FIX_FSS_METADATA WIN1252 -FIX_FSS_DATA WIN1252 -user SYSDBA -password
+    </p>
+    masterkey
+    <source.gbk>
+    <destination.fdb>
+    <br>
+    </p>
+    Banco convertido :D <br>
+    </p>
+    /********* VERSÃO DO BANCO ***********/ <br>
+    </p>
+    Gstat -h diretório_do_banco <br>
+    </p>
+    Firebird 1.0 - ODS 10
+    </p>
+    Firebird 1.5 - ODS 10.1
+    </p>
+    Firebird 2.0 - ODS 11.0
+    </p>
+    Firebird 2.1 - ODS 11.1
+    </p>
+    Firebird 2.5 - ODS 11.2
+
+
+</div>
+
+
+  <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Não foi encontrado o campo porta web na tabela consoles</h3>
+    </p>
+    QUERY: alter table consoles add PortaWeb integer 
+	
+	</div>
+	
+	
+	
+	
+  <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Atrasar a inicialização do programa</h3>
+    </p>[Configuração]
+    </p>SleepInicial=tempoemsegundos 
+		
+	</div>
+	
+	
+  <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Erro de data ou hora inválida nas imagens.</h3>
+    </p>Alteração de dada para o formato português(Brasil) no Windows. 
+	
+	</div>
+	
+	
+	
+  <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Trocar Acession Numer pelo STUDY</h3>
+    </p>Acrescentar no pega.ini
+    </p>[Configuração]
+    </p>AlteraAccessionStudy=1 
+	
+	</div>
+	
+	
+	
+	
+  <div data-role="collapsible" data-theme="b" data-content-theme="a">
+    <h3 data-theme="c">Erro Unable to Connect</h3>
+    </p>• Verificar se o firebird está funcionando
+    (no Vista o FB pode dar conflito fazendo com o que o Painel de Controle não funcione, retire o arquivo firebird2control.CPL da system32)
+    </p>• Verificar conectividade entre a estação e o servidor
+    </p>• Verificar bloqueios de porta (3050) 
+	
+</div>
+</div>
+
+<!-- Fim do FAQ -->
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar" data-theme="b">
+      <ul>
+        <li><a href="#ui"  data-icon="plus">UI</a></li>
+        <li><a href="#agenda"  data-icon="calendar">AGENDA</a></li>
+        <li><a href="#home" data-icon="home">INÍCIO</a></li>
+        <li><a href="#perfil"  data-icon="star">PERFIL</a></li>
+        <li><a href="#faq" class="ui-btn-active ui-state-persist" data-icon="info">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<div data-role="popup" id="popupBasic">
+<p>This is a completely basic popup, no options set.</p>
+</div>
+
+</body>
+<!-- Fim do FAQ -->
+
+
+
+
+</body>
+</html>
